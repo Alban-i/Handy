@@ -1,5 +1,5 @@
 {
-  "name": "handy-app",
+  "name": "katib-app",
   "private": true,
   "version": "0.7.10",
   "type": "module",
@@ -16,7 +16,10 @@
     "format:backend": "cd src-tauri && cargo fmt",
     "test:playwright": "playwright test",
     "test:playwright:ui": "playwright test --ui",
-    "check:translations": "bun scripts/check-translations.ts"
+    "check:translations": "bun scripts/check-translations.ts",
+    "release": "bun scripts/release.ts",
+    "release:minor": "bun scripts/release.ts minor",
+    "release:major": "bun scripts/release.ts major"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
@@ -32,6 +35,7 @@
     "@tauri-apps/plugin-sql": "~2.3.1",
     "@tauri-apps/plugin-store": "~2.4.1",
     "@tauri-apps/plugin-updater": "~2.10.0",
+    "baseline-browser-mapping": "^2.10.0",
     "i18next": "^25.7.2",
     "immer": "^11.1.3",
     "lucide-react": "^0.542.0",

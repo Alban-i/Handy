@@ -1,10 +1,10 @@
-# Contributing to Handy
+# Contributing to Katib
 
-Thank you for your interest in contributing to Handy! This guide will help you get started with contributing to this open source speech-to-text application.
+Thank you for your interest in contributing to Katib! This guide will help you get started with contributing to this open source speech-to-text application.
 
 ## 📖 Philosophy
 
-Handy aims to be the most forkable speech-to-text app. The goal is to create both a useful tool and a foundation for others to build upon—a well-patterned, simple codebase that serves the community. We prioritize:
+Katib aims to be the most forkable speech-to-text app. The goal is to create both a useful tool and a foundation for others to build upon—a well-patterned, simple codebase that serves the community. We prioritize:
 
 - **Simplicity**: Clear, maintainable code over clever solutions
 - **Extensibility**: Make it easy for others to fork and customize
@@ -62,7 +62,7 @@ For detailed platform-specific setup instructions, see [BUILD.md](BUILD.md).
 
 ### Understanding the Codebase
 
-Handy follows a clean architecture pattern:
+Katib follows a clean architecture pattern:
 
 **Backend (Rust - `src-tauri/src/`):**
 
@@ -119,6 +119,8 @@ We use GitHub Discussions for feature requests rather than issues. This keeps is
 
 ### Before Suggesting a Feature
 
+
+
 1. **Search existing discussions** at [github.com/cjpais/Handy/discussions](https://github.com/cjpais/Handy/discussions)
 2. **Check common feature requests**:
    - [Post-processing / Editing Transcripts](https://github.com/cjpais/Handy/discussions/168)
@@ -133,7 +135,7 @@ We use GitHub Discussions for feature requests rather than issues. This keeps is
    - The problem you're trying to solve
    - Your proposed solution
    - Any alternatives you've considered
-   - How it fits with Handy's philosophy
+   - How it fits with Katib's philosophy
 
 ## 🔧 Making Code Contributions
 
@@ -152,9 +154,9 @@ We use GitHub Discussions for feature requests rather than issues. This keeps is
    - Gather community feedback first via [Discussions](https://github.com/cjpais/Handy/discussions)
    - Link to that discussion in your PR
 
-3. **Get community feedback for features** - PRs with demonstrated community interest are **much more likely to be merged**. Start a discussion, get feedback, and link to it in your PR. This helps ensure Handy stays focused and useful for the most people without becoming bloated.
+3. **Get community feedback for features** - PRs with demonstrated community interest are **much more likely to be merged**. Start a discussion, get feedback, and link to it in your PR. This helps ensure Katib stays focused and useful for the most people without becoming bloated.
 
-Community feedback is essential to keeping Handy the best it can be for everyone. It helps prioritize what matters most and prevents feature creep.
+Community feedback is essential to keeping Katib the best it can be for everyone. It helps prioritize what matters most and prevents feature creep.
 
 ### Development Workflow
 
@@ -313,4 +315,4 @@ By contributing to Handy, you agree that your contributions will be licensed und
 
 ---
 
-**Thank you for contributing to Handy!** Your efforts help make speech-to-text technology more accessible, private, and extensible for everyone.
+**Thank you for contributing to Katib!** Your efforts help make speech-to-text technology more accessible, private, and extensible for everyone.

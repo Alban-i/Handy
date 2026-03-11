@@ -344,6 +344,8 @@ pub fn run(cli_args: CliArgs) {
         commands::transcription::set_model_unload_timeout,
         commands::transcription::get_model_load_status,
         commands::transcription::unload_model_manually,
+        commands::transcription::transcribe_audio_file,
+        commands::transcription::format_transcription_text,
         commands::history::get_history_entries,
         commands::history::toggle_history_entry_saved,
         commands::history::get_audio_file_path,
@@ -380,11 +382,11 @@ pub fn run(cli_args: CliArgs) {
                     Target::new(if let Some(data_dir) = portable::data_dir() {
                         TargetKind::Folder {
                             path: data_dir.join("logs"),
-                            file_name: Some("handy".into()),
+                            file_name: Some("katib".into()),
                         }
                     } else {
                         TargetKind::LogDir {
-                            file_name: Some("handy".into()),
+                            file_name: Some("katib".into()),
                         }
                     })
                     .filter(|metadata| {
@@ -431,7 +433,7 @@ pub fn run(cli_args: CliArgs) {
             // for portable mode (redirects WebView2 cache to portable Data dir)
             let mut win_builder =
                 tauri::WebviewWindowBuilder::new(app, "main", tauri::WebviewUrl::App("/".into()))
-                    .title("Handy")
+                    .title("Katib")
                     .inner_size(680.0, 570.0)
                     .min_inner_size(680.0, 570.0)
                     .resizable(true)

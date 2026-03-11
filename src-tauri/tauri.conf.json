@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Handy",
+  "productName": "Katib",
   "version": "0.7.10",
-  "identifier": "com.pais.handy",
+  "identifier": "com.pais.katib",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
@@ -58,7 +58,7 @@
       }
     },
     "windows": {
-      "signCommand": "trusted-signing-cli -e https://eus.codesigning.azure.net/ -a CJ-Signing -c cjpais-dev -d Handy %1",
+      "signCommand": "trusted-signing-cli -e https://eus.codesigning.azure.net/ -a CJ-Signing -c cjpais-dev -d Katib %1",
       "nsis": {
         "template": "nsis/installer.nsi"
       }
@@ -66,9 +66,9 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJBQjcyMDk1MjA2NjAxRjkKUldUNUFXWWdsU0MzdXRRZi8zYzhqV2FaNUVDbDd2Rk5VM1IvWWowVXdmRFNKQ1BrMXF5RFFsLy8K",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY4QkQ4NjJEQ0JCNjQ2RDUKUldUVlJyYkxMWWE5YU5ONjZ5K3VEeWhUUjNTQUxsNUNCaXM2VFNNMlU3eHRVM2d4TWEvM29Da00K",
       "endpoints": [
-        "https://github.com/cjpais/Handy/releases/latest/download/latest.json"
+        "https://fuiuynfnuppsqgokxtur.supabase.co/storage/v1/object/public/katib_releases/latest.json"
       ]
     }
   }

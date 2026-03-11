@@ -10,6 +10,7 @@
   "sidebar": {
     "general": "General",
     "models": "Models",
+    "audioTranscribe": "File",
     "advanced": "Advanced",
     "postProcessing": "Post Process",
     "history": "History",
@@ -87,7 +88,7 @@
     },
     "permissions": {
       "title": "Permissions Required",
-      "description": "Handy needs a couple of permissions to work properly.",
+      "description": "Katib needs a couple of permissions to work properly.",
       "microphone": {
         "title": "Microphone Access",
         "description": "Required to hear your voice for transcription."
@@ -143,7 +144,7 @@
     "general": {
       "title": "General",
       "shortcut": {
-        "title": "Handy Shortcuts",
+        "title": "Katib Shortcuts",
         "description": "Configure keyboard shortcuts to trigger speech-to-text recording",
         "loading": "Loading shortcuts...",
         "none": "No shortcuts configured",
@@ -242,11 +243,11 @@
       },
       "autostart": {
         "label": "Launch on Startup",
-        "description": "Automatically start Handy when you log in to your computer."
+        "description": "Automatically start Katib when you log in to your computer."
       },
       "showTrayIcon": {
         "label": "Show Tray Icon",
-        "description": "Display the Handy icon in the system tray."
+        "description": "Display the Katib icon in the system tray."
       },
       "overlay": {
         "title": "Overlay Position",
@@ -407,7 +408,7 @@
       },
       "updateChecks": {
         "label": "Check for Updates",
-        "description": "Automatically check for new versions of Handy"
+        "description": "Automatically check for new versions of Katib"
       },
       "soundTheme": {
         "label": "Sound Theme",
@@ -471,11 +472,11 @@
       "title": "About",
       "version": {
         "title": "Version",
-        "description": "Current version of Handy"
+        "description": "Current version of Katib"
       },
       "appDataDirectory": {
         "title": "App Data Directory",
-        "description": "Location where Handy stores its data"
+        "description": "Location where Katib stores its data"
       },
       "sourceCode": {
         "title": "Source Code",
@@ -484,7 +485,7 @@
       },
       "supportDevelopment": {
         "title": "Support Development",
-        "description": "Help us continue building Handy",
+        "description": "Help us continue building Katib",
         "button": "Donate"
       },
       "acknowledgments": {
@@ -492,7 +493,7 @@
         "whisper": {
           "title": "Whisper.cpp",
           "description": "High-performance inference of OpenAI's Whisper automatic speech recognition model",
-          "details": "Handy uses Whisper.cpp for fast, local speech-to-text processing. Thanks to the amazing work by Georgi Gerganov and contributors."
+          "details": "Katib uses Whisper.cpp for fast, local speech-to-text processing. Thanks to the amazing work by Georgi Gerganov and contributors."
         }
       }
     }
@@ -535,7 +536,7 @@
   },
   "accessibility": {
     "permissionsRequired": "Accessibility Permissions Required",
-    "permissionsDescription": "Handy needs accessibility permissions to type transcribed text.",
+    "permissionsDescription": "Katib needs accessibility permissions to type transcribed text.",
     "openSettings": "Open System Settings",
     "dismiss": "Dismiss"
   },
@@ -545,7 +546,23 @@
   },
   "appLanguage": {
     "title": "Application Language",
-    "description": "Change the language of the Handy interface"
+    "description": "Change the language of the Katib interface"
+  },
+  "audioTranscribe": {
+    "title": "Transcribe Audio File",
+    "dropzone": "Drop an audio file here or click to browse",
+    "dropNotSupported": "File drop not supported. Please use the file browser.",
+    "unsupportedFormat": "Unsupported audio format. Use WAV, MP3, FLAC, OGG, or AAC.",
+    "error": "Transcription failed: {{error}}",
+    "status": {
+      "loading": "Loading audio file...",
+      "loadingModel": "Loading transcription model...",
+      "transcribing": "Transcribing..."
+    },
+    "formatButton": "Add punctuation & paragraphs",
+    "formatting": "Formatting...",
+    "formatSuccess": "Text formatted successfully",
+    "formatError": "Formatting failed: {{error}}"
   },
   "overlay": {
     "transcribing": "Transcribing...",
